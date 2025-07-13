@@ -1,0 +1,21 @@
+# AZBounty Configuration
+
+# Minimum amount a bounty can be placed for.
+min-bounty-amount: 100
+
+# Maximum amount a bounty can be placed for. Set to 0 for no limit.
+max-bounty-amount: 1000000
+
+# Time in minutes until a bounty expires. Set to 0 for no expiration.
+bounty-duration-minutes: 60
+
+# Tax percentage taken from the bounty reward when placing a bounty.
+# For example, 5 means a 5% tax. Set to 0 to disable.
+bounty-tax-percent: 5
+
+# Whether to allow players to place bounties on themselves.
+allow-self-bounty: false
+
+# GUI Settings
+bounty-board-title: "&aBounty Board"
+bounty-history-title: "&aCompleted Bounties"

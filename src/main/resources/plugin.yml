@@ -1,0 +1,14 @@
+name: AzBounty
+version: '1.0-SNAPSHOT'
+main: io.github.AzmiiD.azBounty.AzBounty
+api-version: '1.21'
+authors: [ Azmii_ ]
+description: Simple Plugin Bounty :)
+depend: [Vault]
+commands:
+  bounty:
+    description: Main command for AzBounty
+    usage: /bounty <place|cancel|history|reload>
+  bounties:
+    description: Opens the bounty board.
+    aliases: [bountyboard, cb]

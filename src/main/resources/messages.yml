@@ -1,0 +1,52 @@
+# AzBounty Messages
+# Use '&' for color codes.
+# Placeholders: {prefix}, {creator}, {target}, {killer}, {amount}, {time}, {player}, {date}
+
+prefix: "&e&lBounty &d>> "
+
+# Command Messages
+bounty-placed: "{prefix}&aYou have placed a bounty of &e${amount} &aon &f{target}&a."
+bounty-placed-broadcast: "{prefix}&f{creator} &ahas placed a bounty on &f{target} &afor &e${amount}&a. Expires in &c{time}&a."
+bounty-cancelled: "{prefix}&aYou have cancelled your bounty on &f{target}&a. Your money (minus tax) has been refunded."
+bounty-claimed: "{prefix}&f{killer} &ahas successfully claimed the bounty by killing &f{target} &afor a reward of &e${amount}&a!"
+no-active-bounty-to-cancel: "{prefix}&cYou do not have an active bounty to cancel."
+player-not-found: "{prefix}&cPlayer '{target}' not found or is not online."
+invalid-amount: "{prefix}&cPlease enter a valid positive number."
+min-bounty: "{prefix}&cThe minimum bounty amount is &e${amount}&c."
+max-bounty: "{prefix}&cThe maximum bounty amount is &e${amount}&c."
+not-enough-money: "{prefix}&cYou do not have enough money. You need &e${amount} &c(including tax)."
+target-already-has-bounty: "{prefix}&cThat player already has a bounty on them."
+cannot-bounty-self: "{prefix}&cYou cannot place a bounty on yourself."
+no-permission: "{prefix}&cYou do not have permission to use this command."
+player-only-command: "{prefix}&cThis command can only be run by a player."
+bounty-expired: "{prefix}&cThe bounty on &f{target} &chas expired. The money has been returned to &f{creator}&c."
+bounty-history-for: "&aBounty History for {player}"
+no-bounty-history: "{prefix}&cNo bounty history found for that player."
+config-reloaded: "{prefix}&aConfiguration files have been reloaded."
+usage:
+  bounty: "{prefix}&cUsage: /bounty <place|cancel|history>"
+  place: "{prefix}&cUsage: /bounty place <player> <amount>"
+  history: "{prefix}&cUsage: /bounty history [player]"
+
+
+# GUI Titles
+bounty-board-title: "&6Active Bounties"
+bounty-history-title: "&6Bounty History"
+
+# GUI Lore
+bounty-board-item:
+  name: "&bBounty Contract on {target}"
+  lore:
+    - "&7Creator: &f{creator}"
+    - "&7Target: &f{target}"
+    - "&7Reward: &e${amount}"
+    - "&7Expires: &c{time}"
+
+history-item:
+  name: "&bBounty on {target}"
+  lore:
+    - "&7Creator: &f{creator}"
+    - "&7Target: &f{target}"
+    - "&7Reward: &e${amount}"
+    - "&7Claimed by: &f{claimer}"
+    - "&7Completed at: &f{date}"
